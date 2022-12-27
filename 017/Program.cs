@@ -69,39 +69,40 @@
 // quarter(x_r , y_r);
 
 
-// через функцию
+// ЧЕРЕЗ ФУНКЦИЮ
 
-int quarter(int numX, int numY)
-{
-    if (numX > 0 && numY > 0)
-    {
-       return 1;
-    }
-    else
-    {
-        if (numX < 0 && numY > 0)
-        {
-            return 2;
-        }
-        else
-        {
-            if (numX < 0 && numY < 0)
-            {
-                return 3;
-            }
-            else
-            {
-                return 4;
-            }
-        }
-    }
-}
+// int quarter(int numX, int numY)
+// {
+//     if (numX > 0 && numY > 0)
+//     {
+//        return 1;
+//     }
+//     else
+//     {
+//         if (numX < 0 && numY > 0)
+//         {
+//             return 2;
+//         }
+//         else
+//         {
+//             if (numX < 0 && numY < 0)
+//             {
+//                 return 3;
+//             }
+//             else
+//             {
+//                 return 4;
+//             }
+//         }
+//     }
+// }
 
-Console.Write("Введите координату X: ");
-int x = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату X: ");
+// int x = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите координату Y: ");
-int y = Convert.ToInt32(Console.ReadLine());
-int x_r = new Random().Next(-150,150);
-int y_r = new Random().Next(-150,150);
-Console.WriteLine($"Точка с координатами {x} и {y} находится в {quarter(x,y)} четверти");
+// Console.Write("Введите координату Y: ");
+// int y = Convert.ToInt32(Console.ReadLine());
+// int x_r = new Random().Next(-150,150);
+// int y_r = new Random().Next(-150,150);
+// Console.WriteLine($"Точка с координатами {x} и {y} находится в {quarter(x,y)} четверти");
+
