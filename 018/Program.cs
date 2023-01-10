@@ -1,40 +1,87 @@
-﻿void quad(int quad_x)
+﻿// Напишите программу, которая по заданному номеру четверти,
+// показывает диапазон возможных координат точек в этой четверти (x и y).
+
+// Console.Write("Введите номер четверти: ");
+// int quarter = int.Parse(Console.ReadLine());
+
+// switch (quarter)
+// {
+//     case 1:
+//     {
+//         Console.WriteLine("x>0 y>0");
+//         break;
+//     }
+//     case 2:
+//     {
+//         Console.WriteLine("x<0 y>0");
+//         break;
+//     }
+//     case 3:
+//     {
+//         Console.WriteLine("x<0 y<0");
+//         break;
+//     }
+//     case 4:
+//     {
+//         Console.WriteLine("x>0 y<0");
+//         break;
+//     }
+
+//     default:
+//     {
+//         Console.WriteLine("Введена неправильная четверть");
+//         break;
+//     }
+// }
+
+Console.Clear();
+string quad(int x)
 {
 
 
-if (quad_x = 1)
-{
-    Console.WriteLine($"В четверти {quad} могут находиться точки с координатами x > 0 и y > 0");
-}
-else
-{
-    if (quad_x = 2)
+    if (x == 1)
     {
-        Console.WriteLine($"В четверти {quad} могут находиться точки с координатами x < 0 и y > 0");
+        //Console.WriteLine($"В четверти {x} могут находиться точки с координатами x > 0 и y > 0");
+        string a = "В четверти 1 могут находиться точки с координатами x > 0 и y > 0";
+        return a;
     }
     else
     {
-        if (quad_x = 3)
+        if (x == 2)
         {
-           Console.WriteLine($"В четверти {quad} могут находиться точки с координатами x < 0 и y < 0"); 
+            //Console.WriteLine($"В четверти {x} могут находиться точки с координатами x < 0 и y > 0");
+            string a = "В четверти 2 могут находиться точки с координатами x < 0 и y > 0";
+            return a;
         }
         else
         {
-            if (quad_x = 4)
+            if (x == 3)
             {
-                Console.WriteLine($"В четверти {quad} могут находиться точки с координатами x > 0 и y < 0");
+                //Console.WriteLine($"В четверти {x} могут находиться точки с координатами x < 0 и y < 0");
+                string a = "В четверти 3 могут находиться точки с координатами x < 0 и y < 0";
+                return a;
             }
             else
             {
-                Console.WriteLine($"Четверти {quad} не существует в системе координат. Введите корректную четверь.");
+                if (x == 4)
+                {
+                    //Console.WriteLine($"В четверти {x} могут находиться точки с координатами x > 0 и y < 0");
+                    string a = "В четверти 4 могут находиться точки с координатами x > 0 и y < 0";
+                    return a;
+                }
+                else
+                {
+                    //Console.WriteLine($"Четверти {x} не существует в системе координат. Введите корректную четверь.");
+                    string a = "Четверти не существует в системе координат. Введите корректную четверь.";
+                    return a;
+                }
             }
         }
     }
 }
-}
 Console.Write("Введите номер четверти в координатах от 1 до 4: ");
-int x = Convert.ToInt32(Console.ReadLine());
-quad(quad_x);
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(quad(num));
 
 
 // ОБЫЧНЫЙ МЕТОД

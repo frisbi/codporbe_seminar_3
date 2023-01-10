@@ -1,8 +1,20 @@
-﻿Console.Write("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-int Index = 1;
-while (Index <= a)
+﻿//Напишите программу, которая принимает на вход число (N)
+//и выдаёт таблицу квадратов чисел от 1 до N.
+
+Console.Clear();
+Console.Write("Введите число N: ");
+int N = int.Parse(Console.ReadLine());
+for(int i = 1; i <= N; i++)
 {
-    Console.WriteLine($"Квадраты чисел от 1 до {a} равняются {Index*Index}");
-    Index+=1;
+    Console.Write($"{i*i} ");
 }
+
+
+// Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// int Index = 1;
+// while (Index <= a)
+// {
+//     Console.WriteLine($"Квадраты чисел от 1 до {a} равняются {Index*Index}");
+//     Index+=1;
+// }
